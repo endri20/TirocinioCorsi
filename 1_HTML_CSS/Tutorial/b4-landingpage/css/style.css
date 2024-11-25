@@ -1,0 +1,35 @@
+body{
+padding: 70px;
+background-image: url(sfondo.jpg);
+}
+
+.jumbotron{
+    padding: 50px;
+   background-image: url(stelle.jpg);
+    color: #DB580B;
+}
+
+.jumbotron h1{
+font-weight: bold;
+    color: #338686;
+}
+
+.jumbotron .mb-2{
+    color: yellow;
+}
+.jumbotron .btn{
+    background-color: #5E0BDB;
+}
+
+.form-inline {
+  display: flex;
+  gap: 10px; 
+  align-items: center; 
+}
+
+.jumbotron .btn-primary{
+    color: white;
+    border: 1px solid wheat;
+    background-color: #5E0BDB;
+}
+

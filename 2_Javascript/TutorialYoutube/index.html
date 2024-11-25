@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: block;
+            margin-bottom: 20px;
+        }
+        button{
+            padding: 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor:pointer;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<input type="text" name="nome" placeholder="nome persona">
+    <button>Saluta!</button>
+    <h1>Nessun saluto</h1>
+
+    <script>
+        let button = document.querySelector('button');
+        let title = document.querySelector('h1');
+        let nome = document.querySelector('input');
+
+        function saluta(name = 'sconosciuto'){
+            title.innerHTML = `Ciao ${name}`;
+        }
+
+        button.addEventListener('click',()=>{
+            saluta(nome.value);
+            console.log(nome.value);
+        })
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <section id="main">
+    <form action="processForm.php" method="post">
+    <input type="hidden" name="csrf" value="dsdsdfsfdsf24">
+        <h1>PLEASE REGISTER</h1>
+        <fieldset id="fieldset-login">
+            <legend>LOGIN DATA</legend>
+
+            <div class="form-group">
+            <label for="name">email</label>
+            <input  required  placeholder="insert your EMAIL" 
+                    type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="password">password</label>
+            <input  required  placeholder="insert your PASSWORD" 
+                    type="password" id="password" name="password">
+        </div>
+        </fieldset>
+            <fieldset>
+            <legend id="fullname">PRESENTATION</legend>
+            
+        
+
+        <div class="form-group">
+
+            <label for="lastname">Insert your last name</label>
+            <input maxlength="4" placeholder="Insert your last name" type="text" id="lastname" name="lastname">
+            <label>
+            YourAge <input  required oninput="document.getElementById('lblage').innerHTML=this.value" min="18" max="99" name="age"type="range">
+            <span id="lblage">30</span>
+            </label>
+        </div>
+            </fieldset>
+            <fieldset>
+            <legend>NATION AND HOBBYS</legend>
+        <div class="form-group">
+            <label for="name">European citizen?</label>
+            YES<input  type="radio" value="Y" checked name="europeancitizen">
+            NO<input  type="radio" value="N"name="europeancitizen">
+
+        </div>
+
+        <div class="form-group">
+            <label>Hobbies</label>
+            Traveling<input  name="hobbies[]" value="Traveling" type="checkbox" >
+            Guitar<input  name="hobbies[]" value="Guitar" type="checkbox">
+            Computers<input  name="hobbies[]" type="checkbox" value="Computers">
+            
+            
+
+        </div>
+        <legend id="legend-languages">LANGUAGES & BIOGRAPHY</legend>
+        <div class="form-group">
+            <label for="">Country</label>
+        <select name="country_code" id="country code">
+        <optgroup label="EUROPE">
+            <option value="IT">Italy</option>
+            <option value="ES">Spain</option>
+        </optgroup>            
+            <option value="AL">Albania</option>
+            <option value="AU">Australia</option>
+            
+            <option value="US">USA</option>
+        </select>
+        
+        </fieldset>
+
+        <fieldset>
+        <LEgend>PERSONAL BIOGRAPHY</LEgend>
+        <div class="form-group">
+        
+        <label for="biography">biography</label>
+        <textarea maxlength="400" cols="30" wrap="hard"
+                     rows="16" name="biography" id="biography"></textarea>
+        </div>
+
+</fieldset>
+        </div>
+
+        <div class="form-group buttons">
+
+        <!-- -->
+            <!-- <input type="reset" value="reset">
+            <input  required type="submit" value="send for" name="send"> -->
+
+            <button type="reset">reset</button>
+            <button>Send data</button>
+        </div>
+    </form>
+    </section>
+
+    <audio controls type="audio/mpeg" src="https://www.youtube.com/watch?v=_0HTwQjMr9k&ab_channel=MemeBoi69">
+    Your browse des not support audio tag
+    </audio>
+
+
+
+    
+</body>
+</html>

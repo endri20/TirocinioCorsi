@@ -1,0 +1,41 @@
+body{
+    background-color: black;
+    
+
+}
+
+table{
+    background-color: gray;
+    width: 400px;
+    margin: 0px auto;
+    border: 2px solid #fff;
+    border-spacing: 4px;
+    border-collapse: collapse;
+}
+
+#orders{
+       width: 850px;
+       margin: 0px auto; 
+    }
+
+#orders caption{
+    text-transform: uppercase;
+    color: #ffffee;
+    padding: 5px;
+}
+th, td{
+    padding: 5px;
+    border:1px solid white;
+
+}
+
+th{
+    background-color: yellow;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+td{
+    color: white;
+    
+}

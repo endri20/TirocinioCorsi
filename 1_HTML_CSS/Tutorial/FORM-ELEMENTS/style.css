@@ -1,0 +1,102 @@
+body{
+    background-color: gray;
+    color:black;
+}
+
+#main{
+    width: 650px;
+    margin:auto;
+    text-align: center;
+}
+label{
+    
+    border: 1px solid white;
+    display: inline-block;
+    width: 45%;
+    background:gray;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-left: 5px;
+}
+
+input{
+    width: 45%;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+form{
+    padding: 5px;
+    border:1px solid white;
+    width: 100%;
+}
+
+.form-group{
+    display:flex;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-left: 5px;
+    flex-wrap: wrap; /* Consente di andare a capo */
+    gap: 10px; /* Spazio tra gli elementi */
+    
+}
+
+h1{
+    text-align: center;
+}
+
+button, input[type=submit]{
+    border: 1px solid ghostwhite;
+    border-radius: 5px;
+    background-color: yellow;
+    width: 200px;
+    cursor: pointer;
+}
+button [type=reset]{
+    color: red;
+
+}
+
+input[type=radio], 
+input[type=checkbox]{
+    width:auto;
+
+}
+
+.form-group{
+    width: 100%;
+
+    
+}
+
+.buttons{
+    margin-top: 20px;
+    padding: 5px;
+}
+
+textarea{
+    border-radius: 10px;
+    border:1px solid gray;
+    height: 200px;
+}
+
+fieldset{
+    border: 1px dashed red;
+    margin: 10px 0px;
+
+}
+
+
+
+legend{
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#legend-fullname{
+    color: green;
+}

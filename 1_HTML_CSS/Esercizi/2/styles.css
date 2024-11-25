@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://picsum.photos/1920/1080);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 25px;
+    height: 180px;
+    width: 590px;
+    background-color: antiquewhite;
+}
+.container h1{
+    text-align: center;
+}
+
+.date{
+    font-family: fantasy;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: -20px;
+}
+
+.article{
+    text-align: center;
+    margin-top: -20px;
+}
+
+a{
+    
+    border-radius: 10px;
+    padding: 3px;
+    background-color: azure;
+    text-align: center;
+}

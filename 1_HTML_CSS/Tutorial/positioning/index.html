@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    body{
+     background-color: black;
+    }
+    #main{
+        border: 1px solid red;
+        width: 1000px;
+        height: 1200;
+        background-color: #ccc;
+        position: static;
+    }
+
+    #container{
+        background-color: #222;
+        border:2px solid #c0c0c0;
+        width: 980px;
+        margin: 10px auto;
+        color: #fff;
+        position: relative;
+    }
+
+    #box1{
+        background-color: red;
+    }
+
+    #box2{
+        background-color: blue;
+    }
+
+    #box3{
+        background-color: green;
+        position: fixed;
+    }
+
+    #box4{
+        background-color: yellow;
+    }
+
+    #box5{
+        background-color: pink;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="main">
+        <p>MAIN DIV</p>
+    <div id="container">
+        <p>CONTAINER DIV</p>
+        <div id="box1">BOX1</div>
+        <div id="box2">BOX2</div>
+        <div id="box3">BOX3</div>
+        <div id="box4">BOX4</div>
+        <div id="box5">BOX5</div>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    color: white;
+    background-color: black;
+}
+
+.poem{
+    background-color: brown;
+    color: black;
+    padding: 10px;
+}
+#mainp{
+    color:red;
+    font-size: 24px;
+}
+
+.green{
+    color:green;
+    background-color: black;
+}
+
+#secondId{
+    color: pink;
+}
+
+h1.green{
+    color: green;
+    padding: 1px;
+    background-color: white;
+}
+
+.poem.green{
+    border: 1px solid red;
+}
+
+.poem .green{
+    border: 1px solid yellow;
+    padding: 10px;
+}
+
+div + p{
+    background-color: yellow;
+    }
+
+div > p{
+    text-transform: uppercase;
+}
