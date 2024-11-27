@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booleans</title>
+  </head>
+  <body>
+    
+    <h1>Rock, Paper, Scissors</h1>
+  <button onclick="playGame('rock')">Rock</button>
+  <button onclick="playGame('paper')">Paper</button>
+  <button onclick="playGame('scissors')">Scissors</button>
+
+
+    <script>
+      function playGame(playerMove) {
+        const computerMove = pickComputerMove();
+
+        let result = "";
+        if (playerMove === 'scissors') {
+        if (computerMove === 'rock') { result = 'you lose'; }
+        if (computerMove === 'paper') { result = 'you win'; }
+        if (computerMove === 'scissors') { result = 'Tie'; }
+      }
+      if (playerMove === 'rock') {
+        if (computerMove === 'rock') { result = 'Tie'; }
+        if (computerMove === 'paper') { result = 'you lose'; }
+        if (computerMove === 'scissors') { result = 'you win'; }
+      }
+      if (playerMove === 'paper') {
+        if (computerMove === 'rock') { result = 'you win'; }
+        if (computerMove === 'paper') { result = 'Tie'; }
+        if (computerMove === 'scissors') { result = 'you lose'; }
+      }
+
+        alert(`you picked ${playerMove}, Computer picket ${computerMove}, ${result}`);
+      }
+      
+      let computerMove = "";
+      function pickComputerMove() {
+        const randomNumber = Math.floor(Math.random() * 4);
+
+        if (randomNumber >= 0 && randomNumber < 1) {
+          computerMove = "rock";
+        }
+        if (randomNumber >= 1 && randomNumber < 2) {
+          computerMove = "paper";
+        }
+        if (randomNumber >= 2 && randomNumber < 3) {
+          computerMove = "scissors";
+        }
+        return computerMove;
+      }
+    </script>
+  </body>
+</html>

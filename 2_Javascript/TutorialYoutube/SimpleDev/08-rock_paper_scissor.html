@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+    <button onclick="playGame('rock')">Rock</button>
+    <button onclick="playGame('paper')">Paper</button>
+    <button onclick="playGame('scissors')">Scissors</button>
+    <button onclick="resetScore()">Reset</button>
+
+    <script>
+      /*
+    let score = JSON.parse(localStorage.getItem('score'));
+    if(!score){
+        score = {
+            wins : 0,
+            losses: 0,
+            ties: 0,
+        };
+    }
+
+        function resetScore(){
+            score.wins = 0;
+            score.losses = 0;
+            score.ties = 0;
+            localStorage.removeItem('score');
+        }
+      function playGame(playerMove) {
+        const computerMove = pickComputerMove();
+
+        let result = "";
+        if (playerMove === 'scissors') {
+        if (computerMove === 'rock') { result = 'you lose'; score.losses++;}
+        if (computerMove === 'paper') { result = 'you win'; score.wins++; }
+        if (computerMove === 'scissors') { result = 'Tie'; score.ties++;}
+      }
+      if (playerMove === 'rock') {
+        if (computerMove === 'rock') { result = 'Tie'; score.ties++;}
+        if (computerMove === 'paper') { result = 'you lose';score.losses++; }
+        if (computerMove === 'scissors') { result = 'you win'; score.wins++; }
+      }
+      if (playerMove === 'paper') {
+        if (computerMove === 'rock') { result = 'you win'; score.wins++;}
+        if (computerMove === 'paper') { result = 'Tie'; score.ties++;}
+        if (computerMove === 'scissors') { result = 'you lose'; score.losses++;}
+      }
+
+        localStorage.setItem('score', JSON.stringify(score));
+
+        alert(
+        `you picked ${playerMove}, Computer picket ${computerMove}, ${result}
+
+            wins:${score.wins} losses: ${score.losses} ties:${score.ties}`
+        );
+      }
+      
+      let computerMove = "";
+      function pickComputerMove() {
+        const randomNumber = Math.floor(Math.random() * 4);
+
+        if (randomNumber >= 0 && randomNumber < 1) {
+          computerMove = "rock";
+        }
+        if (randomNumber >= 1 && randomNumber < 2) {
+          computerMove = "paper";
+        }
+        if (randomNumber >= 2 && randomNumber < 3) {
+          computerMove = "scissors";
+        }
+        return computerMove;
+      }
+      */
+
+      console.log("hello".length);
+      console.log("hello".toUpperCase());
+
+      const object1 = { message: "hello" };
+      const object2 = object1;
+
+      object2.message = "Good Job!";
+      console.log(object1);
+      console.log(object2);
+
+      const object3 = {
+        message: "Good job!",
+      };
+
+      console.log(object3 == object1);
+      console.log(object2 == object1);
+
+      const object4 = {
+        message: "Good jobbbbb!",
+        price: 799,
+      };
+
+      // const message = object4.message;
+      const { message, price } = object4;
+      console.log(message);
+      console.log(price);
+
+      const object5 = {
+        //message: message,
+        message,
+        /*
+        method : function function1(){
+            console.log('method function');
+        }
+        */
+        method(){
+        console.log('method')
+        }
+      };
+      console.log(object5.message)
+      object5.method();
+    </script>
+  </body>
+</html>
