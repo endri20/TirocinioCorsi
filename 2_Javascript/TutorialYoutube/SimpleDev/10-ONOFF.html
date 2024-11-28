@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+      background-color: #191919;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Premi il bottone per vedere la magia!</h1>
+  <button onclick="makePageWhite()" style="padding: 10px 20px; font-size: 16px; cursor: pointer;">
+    Rendi Bianca la Pagina
+  </button>
+    <script>
+    function makePageWhite() {
+      // Salva il colore corrente
+      const originalBackground = document.body.style.backgroundColor;
+      const originalColor = document.body.style.color;
+
+      // Imposta il colore di sfondo e testo a bianco
+      document.body.style.backgroundColor = 'white';
+      document.body.style.color = 'white';
+
+      // Ripristina i colori dopo 1 secondo
+      setTimeout(() => {
+        document.body.style.backgroundColor = originalBackground;
+        document.body.style.color = originalColor;
+      }, 1000); // Cambia 1000 (millisecondi) per modificare la durata
+    }
+  </script>
+</body>
+</html>
