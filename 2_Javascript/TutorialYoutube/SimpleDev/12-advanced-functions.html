@@ -56,8 +56,52 @@
     setInterval(function(){
         console.log('interval');
     }, 3000);
-    */
     
+
+    [
+        'make dinner',
+        'wash dishes',
+        'watch youtube',
+    ].forEach((value, index) => {
+        if(value === 'wash dishes'){
+            return;
+        }
+    });
+
+    const regularFunction = function(param, param2){
+        console.log('hello');
+        return 5;
+    };
+
+   const arrowFunction = (param, param2) => {
+    console.log('hello');
+        return 5;
+   };
+
+   arrowFunction();
+
+   const oneParam = param =>{
+    console.log(param+1);
+   }
+   oneParam(2);
+
+   const onLine = () => 2+3;
+   console.log(onLine());
+
+
+
+    console.log([1, -3, 5].filter((value, index) =>{
+        if(value >= 0){
+            return true
+        }else{
+        return false;
+        }
+
+    }));
+*/
+
+
+
     </script>
      
   </body>

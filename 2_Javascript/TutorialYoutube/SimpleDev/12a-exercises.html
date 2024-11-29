@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD</title>
+    <style>
+    button{
+    font-size: 200px;
+    cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    
+    <button onclick="
+        setFinisced();
+    " class="finisced">Start</button>
+
+<script>
+  
+  function setFinisced(){
+  document.querySelector('.finisced').innerHTML = 'loading...';
+    setTimeout(function(){
+    document.querySelector('.finisced').innerHTML = 'finisced!';
+    }, 1000);
+    
+  }
+
+</script>
+
+</body>
+</html>

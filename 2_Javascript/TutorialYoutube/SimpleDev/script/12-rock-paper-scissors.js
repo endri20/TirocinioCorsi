@@ -16,6 +16,34 @@
         score.ties = 0;
         localStorage.removeItem("score");
       }
+      document.querySelector('.js-rock-button')
+        .addEventListener('click', () => {
+          playGame('rock');
+        });
+        document.body.addEventListener('keydown', (event) =>{
+          if(event.key === 'r'){
+              playGame('rock');
+          }
+          if(event.key === 'p'){
+              playGame('paper');
+          }
+          if(event.key === 's'){
+              playGame('scissors');
+          }
+          
+        });
+
+      document.querySelector('.js-paper-button')
+        .addEventListener('click', () => {
+          playGame('paper');
+        });
+        
+        document.querySelector('.js-scissors-button')
+        .addEventListener('click', () => {
+          playGame('scissors');
+        });
+        
+
       function playGame(playerMove) {
         const computerMove = pickComputerMove();
 
@@ -97,9 +125,11 @@
 let isAutoPlaying = false;
 let intervalId;
 
+
+
 function autoPlay(){
 if(!isAutoPlaying){
-  intervalId = setInterval(function(){
+  intervalId = setInterval(() => {
         const playerMove = pickComputerMove();
         playGame(playerMove);
     },1000);
@@ -109,4 +139,5 @@ if(!isAutoPlaying){
     isAutoPlaying = false;
 }
    
+
 };
