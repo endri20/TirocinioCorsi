@@ -1,0 +1,60 @@
+body {
+    background-color: lightcoral;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column; /* Disposizione in colonna */
+    align-items: center; /* Centrato orizzontalmente */
+    justify-content: flex-start; /* Inizia dall'alto */
+    gap: 20px; /* Spazio tra titolo e box */
+    margin: 0;
+    padding: 20px; /* Spazio intorno ai bordi */
+}
+
+/* Stile del titolo */
+.titolo {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+/* Stile del contenitore delle domande */
+.box-domande-css {
+    width: 1000px; /* Adatta alla larghezza dello schermo */
+    max-width: 1000px; /* Limite massimo di larghezza */
+    height: 300px; /* Altezza dinamica basata sul contenuto */
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column; /* Elementi impilati */
+    padding: 20px; /* Spazio interno */
+    gap: 10px; /* Spazi tra le domande */
+    border-radius: 10px; /* Angoli arrotondati */
+    overflow-y: auto; /* Abilita scorrimento verticale se necessario */
+}
+
+.opzioni {
+     display: flex;
+    justify-content: center;  /* Allinea i bottoni orizzontalmente al centro */
+    align-items: center;      /* Allinea i bottoni verticalmente al centro */
+    flex-wrap: wrap;          /* Permette ai bottoni di andare a capo se lo spazio non è sufficiente */
+    height: 100vh;
+}
+.domanda{
+    font-weight: bold;
+    text-align: center;
+}
+button{
+    background-color: blue;
+    color: white;
+    border: 2px solid red;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    flex: 0 0 41%;
+    cursor: pointer;
+   justify-content: center;
+}
+
