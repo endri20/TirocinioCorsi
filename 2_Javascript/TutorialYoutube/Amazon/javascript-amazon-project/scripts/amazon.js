@@ -1,6 +1,6 @@
-import { saluto } from "../data/cart.js";
+import { cart, addToCart, updateCartQuantity } from "../data/cart.js";
 import { products } from "../data/products.js";
-const cart = [];
+
 
 let productsHTML = "";
 products.forEach((product) => {
@@ -59,7 +59,7 @@ products.forEach((product) => {
 });
 
 document.querySelector(".js-products-grid").innerHTML = productsHTML;
-
+/*
 function addToCart(productId) {
   let matchingItem;
   cart.forEach((CartItem) => {
@@ -84,12 +84,12 @@ function updateCartQuantity(){
     });
     document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
 }
+*/
 
 document.querySelectorAll(".js-add-to-cart").forEach((button) => {
   button.addEventListener("click", () => {
     const productId = button.dataset.productId;
     addToCart(productId);
     updateCartQuantity();
-    console.log(cart);
   });
 });
